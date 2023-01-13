@@ -1,0 +1,133 @@
+
+
+
+header P{
+    color: #353535;
+    margin: 20px 0 30px 0;
+    padding: 0 20px;
+}
+
+
+.logo{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #FFFFFF;
+    -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    height: 63px;
+
+    img{
+        width: 162px;
+    }
+}
+
+
+.ville{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #EAEAEA;
+    position: relative;
+    z-index: -5;
+    height: 50px;
+
+    svg{
+        margin-right: 17px;
+    }
+}
+
+
+.text_btn{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    padding: 40px 0 60px 0;
+    background-color: #F7F7F7;
+
+    a{
+        -webkit-transition: 0.2s;
+        -o-transition: 0.2s;
+        transition: 0.2s;
+    
+        &:hover{
+            -webkit-filter: brightness(1.1);
+                    filter: brightness(1.1);
+            -webkit-box-shadow: 0px 5px 10px rgb(0 0 0 / 30%);
+                    box-shadow: 0px 5px 10px rgb(0 0 0 / 30%);
+        }
+    }
+}
+
+
+.btn{
+    cursor: pointer;
+    font-family: 'Roboto';
+    color: white;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 15px 22px;
+    background: -o-linear-gradient(249.36deg, #9356DC -5.2%, #FF79DA 110.74%);
+    background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+    -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+
+.btn_rounded{
+    border-radius: 25px;
+}
+
+
+.text h2{
+    padding: 0 60px;
+}
+
+
+
+
+
+/*==  HEADER | 768px  ==*/
+
+
+@media (min-width:768px){
+
+    .logo{
+        height: 96px;
+        
+        img{
+            width: 200px;
+        }
+        
+        a{
+            left: 52px;
+        }
+    }
+
+    .text_btn{
+        padding: 40px 0;
+    }
+
+    .text h2{
+        font-size: 40px;
+    }
+}

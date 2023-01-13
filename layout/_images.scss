@@ -1,0 +1,88 @@
+
+
+
+.img1{
+    background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+    width: 100%;
+    height: 70%;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.img2{
+    background-image: url(../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+    width: 100%;
+    height: 70%;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.img3{
+    background-image: url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+    width: 100%;
+    height: 70%;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.img4{
+    background-image: url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+    width: 100%;
+    height: 70%;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+.image_carte{
+    width: 100%;
+    height: 275px;
+    background-image: url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.image_carte2{
+    width: 100%;
+    height: 275px;
+    background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.image_carte3{
+    width: 100%;
+    height: 275px;
+    background-image: url(../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.image_carte4{
+    width: 100%;
+    height: 275px;
+    background-image: url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+/*==  IMAGE MAIN |  1024PX  ==*/
+
+
+@media (min-width:1024px){
+
+    .image_carte,
+    .image_carte2,
+    .image_carte3,
+    .image_carte4{
+        height: 423px;
+    }
+}

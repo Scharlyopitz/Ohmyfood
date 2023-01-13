@@ -1,0 +1,236 @@
+/*==  MAIN  ==*/
+
+.carte{
+    background-color: $grey;
+    border-radius: 40px 40px 0 0;
+    margin-top: -55px;
+
+    a:hover{
+        -webkit-filter: brightness(1.1);
+                filter: brightness(1.1);
+        -webkit-box-shadow: 0px 5px 10px rgb(0 0 0 / 30%);
+                box-shadow: 0px 5px 10px rgb(0 0 0 / 30%); 
+    }
+}
+
+
+
+
+.titre_hearth{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 32px 40px 0 17px;
+}
+
+
+
+/*==  MENU  ==*/
+
+
+.group_menu{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 12px;
+    margin-top: 40px;
+    padding: 0 13px;
+}
+
+
+
+
+
+.text_menu{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    padding: 12px 22px 12px 11px;
+    white-space: nowrap;
+    overflow: hidden;
+
+    h6{
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 3;
+        grid-column: 1 / 4;
+    }
+
+    h5,h6{
+        overflow: hidden;
+        -o-text-overflow: ellipsis;
+           text-overflow: ellipsis;
+    }
+}
+
+
+.prix{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-grid-column: 4;
+    grid-column: 4 / 4;
+}
+
+
+.valid{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 0;
+    height: 68px;
+    background: #99E2D0;
+    border-radius: 0px 15px 15px 0px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+
+    i{
+        width: 20px;
+        font-size: 22px;
+        color: #FFFFFF;
+        -webkit-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s;
+    }
+}
+
+
+
+
+.button{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 40px;
+    padding-bottom: 40px;
+    
+    a{
+        width: 186px;
+        text-align: center;
+        -webkit-transition: 0.2s;
+        -o-transition: 0.2s;
+        transition: 0.2s;
+        -webkit-animation: button 2s ease-in-out;
+                animation: button 2s ease-in-out;
+        -webkit-animation-duration: 2.6s;
+                animation-duration: 2.6s;
+
+        @-webkit-keyframes button {
+            
+            0%{
+                -webkit-transform: scale(0);
+                        transform: scale(0);
+            }
+            70%{
+                -webkit-transform: scale(0);
+                        transform: scale(0);
+            }
+            100%{
+                -webkit-transform: scale(1);
+                        transform: scale(1);
+            }
+        }
+
+        @keyframes button {
+            
+            0%{
+                -webkit-transform: scale(0);
+                        transform: scale(0);
+            }
+            70%{
+                -webkit-transform: scale(0);
+                        transform: scale(0);
+            }
+            100%{
+                -webkit-transform: scale(1);
+                        transform: scale(1);
+            }
+        }
+    }
+}
+
+
+
+
+
+
+/*==  MENU MAIN |  768PX  ==*/
+
+
+@media (min-width:768px){
+
+    .carte{
+        margin: -55px 50px 0;
+    }
+
+    .titre_hearth{
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+    
+    .hearth{
+        margin-left: 24px;
+    }
+
+    .group_menu{
+        padding: 0 50px;
+    }
+
+    .text_menu{
+        padding: 12px 36px 12px 20px;
+    }
+}
+
+
+/*==  MENU MAIN |  1024PX  ==*/
+
+
+@media (min-width:1024px){
+
+    .carte{
+        margin: -55px 192px 0px;
+    }
+}
+
+
+/*==  MENU MAIN |  1440PX  ==*/
+
+
+@media (min-width:1440px){
+    
+    .group_menu{
+        padding: 0 210px;
+    }
+
+    .carte{
+        max-width: 1056px;
+        margin: -55px auto 0;
+    }
+
+}

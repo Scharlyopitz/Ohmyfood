@@ -1,0 +1,64 @@
+
+
+
+.text, .text_btn a,.btn_fonctionnement, .carte_restaurant{
+    -webkit-animation: animation_page 2s ease-in-out;
+            animation: animation_page 2s ease-in-out;
+}
+
+
+.text, .text_btn a{
+    -webkit-animation-delay: 3.2s;
+            animation-delay: 3.2s;
+}
+
+
+.btn_fonctionnement{
+    -webkit-animation-delay: 3.4s;
+            animation-delay: 3.4s;
+}
+
+
+.carte_restaurant{
+    -webkit-animation-delay: 3.6s;
+            animation-delay: 3.6s;
+}
+
+@-webkit-keyframes animation_page {
+    
+    0%{
+        -webkit-transform: translateY(-20px);
+                transform: translateY(-20px);
+        opacity: 0;
+    }
+    50%{
+        -webkit-transform: translateY(-20px);
+                transform: translateY(-20px);
+        opacity: 0;
+    }
+    100%{
+        -webkit-transform: translateY(0px);
+                transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes animation_page {
+    
+    0%{
+        -webkit-transform: translateY(-20px);
+                transform: translateY(-20px);
+        opacity: 0;
+    }
+    50%{
+        -webkit-transform: translateY(-20px);
+                transform: translateY(-20px);
+        opacity: 0;
+    }
+    100%{
+        -webkit-transform: translateY(0px);
+                transform: translateY(0px);
+        opacity: 1;
+    }
+}
+

@@ -1,0 +1,120 @@
+.hearth{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    
+    i{
+        cursor: pointer;
+        font-size: 22px;
+        -webkit-transition: 0.2s;
+        -o-transition: 0.2s;
+        transition: 0.2s;
+
+        &:nth-child(2){
+            opacity: 0;
+            position: absolute;
+            background: -o-linear-gradient(249.36deg, #9356DC -5.2%, #FF79DA 110.74%);
+            background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            font-family: 'fontawesome';
+        }
+
+        &:hover:nth-child(2){
+            opacity: 1;
+        }
+    }
+}
+
+
+.checkbox-container{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+
+input[type="checkbox"],
+input[type="radio"]{
+    display: none;
+}
+
+input[type="checkbox"]:checked + .hearth i:nth-child(2){
+    opacity: 1;
+}
+
+input[type="radio"]:checked + .menu .valid{
+    width: 74px;
+}
+
+input[type="radio"]:checked + .menu .valid i{
+    -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+            transform: rotate(360deg);
+}
+
+
+
+
+
+.logo{
+    position: relative;
+
+    a{
+        position: absolute;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        width: 63.5px;
+        height: 100%;
+        left: 0;
+        font-size: 20px;
+        color: #353535;
+
+        &:hover i{
+            -webkit-animation: arrow 1.5s ease-in-out infinite;
+                    animation: arrow 1.5s ease-in-out infinite;
+
+            @-webkit-keyframes arrow {
+                
+                0%{
+                    -webkit-transform: translateX(0px);
+                            transform: translateX(0px);
+                }
+                50%{
+                    -webkit-transform: translateX(-15px);
+                            transform: translateX(-15px);
+                }
+                100%{
+                    -webkit-transform: translateX(0px);
+                            transform: translateX(0px);
+                }
+            }
+
+            @keyframes arrow {
+                
+                0%{
+                    -webkit-transform: translateX(0px);
+                            transform: translateX(0px);
+                }
+                50%{
+                    -webkit-transform: translateX(-15px);
+                            transform: translateX(-15px);
+                }
+                100%{
+                    -webkit-transform: translateX(0px);
+                            transform: translateX(0px);
+                }
+            }
+        }
+    }
+}
