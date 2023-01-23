@@ -24,6 +24,27 @@
         -webkit-animation: h1 2s infinite ease-in-out;
                 animation: h1 2s infinite ease-in-out;
     }
+
+    &__background{
+        position: absolute;
+        z-index: -1;
+        height: 50%;
+        top: 15%;
+        max-width: 55%;
+        -webkit-transform: translateX(40%);
+            -ms-transform: translateX(40%);
+                transform: translateX(40%);
+        -webkit-mask-image: radial-gradient(black, transparent);
+                mask-image: radial-gradient(black, transparent);
+    }
+
+    &__fond{
+        background: url(https://cdn.discordapp.com/attachments/997025307255119955/1004483049406353568/stars_background.svg);
+        width: 1740px;
+        height: 100%;
+        -webkit-animation: anime 1.2s infinite cubic-bezier(0, 0, 0.7, 0.73);
+                animation: anime 1.2s infinite cubic-bezier(0, 0, 0.7, 0.73);
+    }
 }
 
 @-webkit-keyframes loader {
@@ -81,27 +102,7 @@
 }
 
 
-.background_container{
-    position: absolute;
-    z-index: -1;
-    height: 50%;
-    top: 15%;
-    max-width: 55%;
-    -webkit-transform: translateX(40%);
-        -ms-transform: translateX(40%);
-            transform: translateX(40%);
-    -webkit-mask-image: radial-gradient(black, transparent);
-            mask-image: radial-gradient(black, transparent);
-}
 
-
-.fond_loader{
-    background: url(https://cdn.discordapp.com/attachments/997025307255119955/1004483049406353568/stars_background.svg);
-    width: 1740px;
-    height: 100%;
-    -webkit-animation: anime 1.2s infinite cubic-bezier(0, 0, 0.7, 0.73);
-            animation: anime 1.2s infinite cubic-bezier(0, 0, 0.7, 0.73);
-}
 
 @-webkit-keyframes anime {
     
@@ -124,7 +125,7 @@
 
 
 
-.animation_loader{
+.animation{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -138,19 +139,30 @@
     -webkit-transform: translateX(65px);
         -ms-transform: translateX(65px);
             transform: translateX(65px);
+
+    &__knife{
+        position: relative;
+        background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Twemoji12_1f52a.svg/1200px-Twemoji12_1f52a.svg.png) no-repeat;
+        background-size: cover;
+        rotate: 310deg;
+        width: 90px;
+        height: 90px;
+        -webkit-animation: knife 10s ease-in-out infinite;
+                animation: knife 10s ease-in-out infinite;
+    }
+
+    &__ombre{
+        width: 170px;
+        border-radius: 50%;
+        height: 10px;
+        background: -o-radial-gradient(rgba(0, 0, 0, 0.2), transparent);
+        background: radial-gradient(rgba(0, 0, 0, 0.2), transparent);
+        -webkit-animation: ombre 10s ease-in-out infinite;
+                animation: ombre 10s ease-in-out infinite;
+    }
 }
 
 
-.knife{
-    position: relative;
-    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Twemoji12_1f52a.svg/1200px-Twemoji12_1f52a.svg.png) no-repeat;
-    background-size: cover;
-    rotate: 310deg;
-    width: 90px;
-    height: 90px;
-    -webkit-animation: knife 10s ease-in-out infinite;
-            animation: knife 10s ease-in-out infinite;
-}
 
 @-webkit-keyframes knife {
     
@@ -269,15 +281,7 @@
 }
 
 
-.ombre{
-    width: 170px;
-    border-radius: 50%;
-    height: 10px;
-    background: -o-radial-gradient(rgba(0, 0, 0, 0.2), transparent);
-    background: radial-gradient(rgba(0, 0, 0, 0.2), transparent);
-    -webkit-animation: ombre 10s ease-in-out infinite;
-            animation: ombre 10s ease-in-out infinite;
-}
+
 
 @-webkit-keyframes ombre {
     
