@@ -1,16 +1,16 @@
-@import '../base/font';
-@import '../base/reset';
-@import '../base/typographie';
+@import '../scss/base/font';
+@import '../scss/base/reset';
+@import '../scss/base/typographie';
 
-@import '../utils/variables';
+@import '../scss/utils/variables';
 
-@import '../components/loader';
-@import '../components/animation-page-acceuil';
-@import '../components/animation-page-menu';
-@import '../components/animation-au-click';
+@import '../scss/components/loader';
+@import '../scss/components/animation-page-acceuil';
+@import '../scss/components/animation-page-menu';
+@import '../scss/components/animation-au-click';
 
-@import '../layout/header';
-@import '../layout/main-acceuil';
-@import '../layout/main-menu';
-@import '../layout/images';
-@import '../layout/footer';
+@import '../scss/layout/header';
+@import '../scss/layout/main-acceuil';
+@import '../scss/layout/main-menu';
+@import '../scss/layout/images';
+@import '../scss/layout/footer';
